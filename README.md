@@ -11,3 +11,6 @@ Dependencies are included as CDN within the template.html file.
 - Bootstrap
 - Darkmode.js
 - Font Awesome Icons
+
+### Examples
+
