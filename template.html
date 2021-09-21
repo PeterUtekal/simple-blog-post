@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./favicon.ico" />
+  <style>
+      body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    article{
+        margin-top: 5em;
+    }
+    .side-nav{
+        color: black;
+        border-radius: 50%;
+        text-decoration: none;
+        border: none;
+        width: 3em;
+        height: 3em;
+        padding: 10px;
+        background-color: white;
+        transition: 0.5s;
+        margin-bottom: 10px;
+    }
+    .side-nav-div{
+        margin-top: 7em;
+        text-align: center;
+    }
+    .side-nav:hover{
+        color: white;
+        background-color: black;
+    }
+
+    html {
+        font-size: 1.3rem;
+      }
+
+  </style>
+
+</head>
+<body class='container'>
+    <div class='row'>
+    <div class='col-1 side-nav-div'>
+        <button onclick="window.location.replace('https://www.utekal.sk')" class='side-nav'><span class="fa fa-home"></span></button>
+        <button onclick="increaseFontSize()" class='side-nav'>A+</button>
+        <button onclick="decreaseFontSize()" class='side-nav'>A-</button>
+    </div>
+    <article class='col-11 mt-5'>
+   
+    </article>
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+    function increaseFontSize(){
+
+        let html = document.getElementsByTagName('html')[0];
+        let currentFont = window.getComputedStyle(html, null).getPropertyValue("font-size");
+        if(currentFont == '35px'){
+            return false;
+        }
+
+        html.style.fontSize = parseInt(currentFont) + parseInt(3) + "px";
+    }
+    function decreaseFontSize(){
+
+        let html = document.getElementsByTagName('html')[0];
+        let currentFont = window.getComputedStyle(html, null).getPropertyValue("font-size");
+        if(currentFont == '14px'){
+            return false;
+        }
+        html.style.fontSize = parseInt(currentFont) - parseInt(3) + "px";
+    }
+
+  function addDarkmodeWidget() {
+    const options = {
+        time: '0.5s', // default: '0.3s'
+        mixColor: '#fff', // default: '#fff'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: false, // default: true,
+        label: '🌙', // default: ''
+        autoMatchOsTheme: true // default: true
+        }
+
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+  }
+  window.addEventListener('load', addDarkmodeWidget);
+</script>
+    
+</body>
+</html>
