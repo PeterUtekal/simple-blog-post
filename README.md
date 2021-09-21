@@ -2,7 +2,7 @@
 
 ### Instructions
 
-Simply download the template.html file and paste blog post html code into the ```<article>``` tag.
+Simply download the template.html file and paste blog post html code into the ```<article>``` tag. On the line number 48, https://example.com needs to be replaced with your homepage.
  
 ### Dependencies
   
