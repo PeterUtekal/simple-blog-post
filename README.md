@@ -1,10 +1,18 @@
 # Simple static blog post template
 
-### Instructions
+## Features
+
+- Soothing font (Georgia)
+- Font size resizing by the user
+- Home button
+- Integrated darkmode switch
+- Nice and simply blockquote styling
+
+## Instructions
 
 Simply download the template.html file and paste blog post html code into the ```<article>``` tag. On the line number 48, https://example.com needs to be replaced with your homepage.
  
-### Dependencies
+## Dependencies
   
 Dependencies are included as CDN within the template.html file.
 
@@ -12,7 +20,7 @@ Dependencies are included as CDN within the template.html file.
 - Darkmode.js
 - Font Awesome Icons
 
-### Examples
+## Examples
 
 ![screenshot_darkmode](https://raw.githubusercontent.com/PeterUtekal/simple-blog-post/main/screenshots/dark_mode.png)
 ![screenshot_lightmode](https://raw.githubusercontent.com/PeterUtekal/simple-blog-post/main/screenshots/light_mode.png)
