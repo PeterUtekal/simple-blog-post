@@ -6,7 +6,7 @@
 - Font size resizing by the user
 - Home button
 - Integrated darkmode switch
-- Nice and simply blockquote styling
+- Nice and simple blockquote styling
 
 ## Instructions
 
